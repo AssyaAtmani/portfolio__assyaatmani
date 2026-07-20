@@ -1,0 +1,490 @@
+body{
+    background-color: rgba(128, 128, 128, 0.747);
+}
+
+header{
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.863),rgba(202, 58, 79, 0.877));
+    height: 130px;
+    padding: 10px;
+}
+
+.search{
+    position: absolute;
+    top: 100px;
+    right: 20px;
+    color: whitesmoke;
+    width: 300px;
+}
+
+input{
+    width: 250px;
+    background-image: linear-gradient(rgba(65, 1, 12, 0.288))
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0 0 4px #777575b2;
+}
+
+.logo{
+    height: 120px;
+    width: 150px;
+    opacity: 0.6;
+    border-radius: 20px;
+}
+
+.logo:hover{
+    scale: 1.1 1.1;
+    opacity: 1;
+    box-shadow: 5px 5px 5px #6e6c6ca9;
+    transition: 0.3s
+}
+
+nav{
+    position: fixed;
+    top: 1px;
+    right: 20px;
+    padding-right: 30px
+}
+
+ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+  nav{
+    right: 1px;
+  }
+}
+
+a{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 20px;
+    text-decoration-line: none;
+    border-bottom: 2px solid transparent;
+}
+
+a:hover{
+    border-bottom-color: white;
+}
+
+fieldset{
+    border-color:  rgba(110, 13, 31, 0.39);
+    border-radius: 9px 50px;
+}
+
+legend h2 i{
+    background: linear-gradient(to bottom, rgb(107, 19, 34), rgb(87, 28, 87));
+    background-clip: text;
+    color: transparent;
+    font-size: 40px;
+}
+
+.img{
+    padding: 0;
+    padding-right: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section{
+    height:500px;
+    width:100%;
+    overflow: scroll
+}
+
+.box {
+    flex: 1 1 250px;
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+    /* Responsive : pour les petits écrans */
+@media (max-width: 600px) {
+    .box {
+        flex: 1 1 100%;
+    }
+}
+
+b{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.grey{
+    width: 200px;
+    background-color: #ffffff63;
+    border-radius: 15px;
+}
+
+.greyPant{
+    height: 250px;
+    width: 160px;
+    border-radius: 9px 50px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.grey:hover{
+    scale: 1.1 1.1;
+    transition: 0.3s;
+    box-shadow: 5px 5px 5px rgba(110, 13, 31, 0.616);
+}
+
+button{
+    position: relative;
+    left: 20px;
+    border-style: solid;
+    border-color: #5506149d;
+    border-radius: 5px 50px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.black{
+    width: 200px;
+    background-color: #ffffff63;
+    border-radius: 15px;
+}
+
+.blackPant{
+    height: 250px;
+    width: 170px;
+    border-radius: 9px 50px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.black:hover{
+    scale: 1.1 1.1;
+    transition: 0.3s;
+    box-shadow: 5px 5px 5px rgba(110, 13, 31, 0.616);
+}
+
+.white{
+    width: 200px;
+    background-color: #ffffff63;
+    border-radius: 15px;
+}
+
+.whitePant{
+    height: 250px;
+    width: 150px;
+    border-radius: 9px 50px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.white:hover{
+    scale: 1.1 1.1;
+    transition: 0.3s;
+    box-shadow: 5px 5px 5px rgba(110, 13, 31, 0.616);
+}
+
+.brown{
+    width: 200px;
+    background-color: #ffffff63;
+    border-radius: 15px;
+}
+
+.brownPant{
+    height: 250px;
+    width: 160px;
+    border-radius: 9px 50px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.brown:hover{
+    scale: 1.1 1.1;
+    transition: 0.3s;
+    box-shadow: 5px 5px 5px rgba(110, 13, 31, 0.616);
+}
+
+.green{
+    width: 200px;
+    background-color: #ffffff63;
+    border-radius: 15px;
+}
+
+.greenPant{
+    height: 250px;
+    width: 160px;
+    border-radius: 9px 50px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.green:hover{
+    scale: 1.1 1.1;
+    transition: 0.3s;
+    box-shadow: 5px 5px 5px rgba(110, 13, 31, 0.616);
+}
+
+.brow{
+    width: 200px;
+    background-color: #ffffff63;
+    border-radius: 15px;
+}
+
+.browPant{
+    height: 250px;
+    width: 160px;
+    border-radius: 9px 50px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.brow:hover{
+    scale: 1.1 1.1;
+    transition: 0.3s;
+    box-shadow: 5px 5px 5px rgba(110, 13, 31, 0.616);
+}
+
+.gre{
+    width: 200px;
+    background-color: #ffffff63;
+    border-radius: 15px;
+}
+
+.grePant{
+    height: 260px;
+    width: 160px;
+    border-radius: 9px 50px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.gre:hover{
+    scale: 1.1 1.1;
+    transition: 0.3s;
+    box-shadow: 5px 5px 5px rgba(110, 13, 31, 0.616);
+}
+
+.cof{
+    width: 200px;
+    background-color: #ffffff63;
+    border-radius: 15px;
+}
+
+.cofPant{
+    height: 260px;
+    width: 160px;
+    border-radius: 9px 50px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.cof:hover{
+    scale: 1.1 1.1;
+    transition: 0.3s;
+    box-shadow: 5px 5px 5px rgba(110, 13, 31, 0.616);
+}
+
+.gree{
+    width: 200px;
+    background-color: #ffffff63;
+    border-radius: 15px;
+}
+
+.greePant{
+    height: 260px;
+    width: 160px;
+    border-radius: 9px 50px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.gree:hover{
+    scale: 1.1 1.1;
+    transition: 0.3s;
+    box-shadow: 5px 5px 5px rgba(110, 13, 31, 0.616);
+}
+
+.purple{
+    width: 200px;
+    background-color: #ffffff63;
+    border-radius: 15px;
+}
+
+.purplePant{
+    height: 260px;
+    width: 160px;
+    border-radius: 9px 50px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.purple:hover{
+    scale: 1.1 1.1;
+    transition: 0.3s;
+    box-shadow: 5px 5px 5px rgba(110, 13, 31, 0.616);
+}
+
+.black{
+    width: 200px;
+    background-color: #ffffff63;
+    border-radius: 15px;
+}
+
+.blackHoodie{
+    height: 230px;
+    width: 220px;
+    border-radius: 9px 50px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.black:hover{
+    scale: 1.1 1.1;
+    transition: 0.3s;
+    box-shadow: 5px 5px 5px rgba(110, 13, 31, 0.616);
+}
+
+.gray{
+    width: 200px;
+    background-color: #ffffff63;
+    border-radius: 15px;
+}
+
+.grayHoodie{
+    height: 240px;
+    width: 220px;
+    border-radius: 9px 50px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.gray:hover{
+    scale: 1.1 1.1;
+    transition: 0.3s;
+    box-shadow: 5px 5px 5px rgba(110, 13, 31, 0.616);
+}
+
+.white{
+    width: 200px;
+    background-color: #ffffff63;
+    border-radius: 15px;
+}
+
+.whiteHoodie{
+    height: 240px;
+    width: 220px;
+    border-radius: 9px 50px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.white:hover{
+    scale: 1.1 1.1;
+    transition: 0.3s;
+    box-shadow: 5px 5px 5px rgba(110, 13, 31, 0.616);
+}
+
+.whi{
+    width: 200px;
+    background-color: #ffffff63;
+    border-radius: 15px;
+}
+
+.whiHoodie{
+    height: 240px;
+    width: 230px;
+    border-radius: 9px 50px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.whi:hover{
+    scale: 1.1 1.1;
+    transition: 0.3s;
+    box-shadow: 5px 5px 5px rgba(110, 13, 31, 0.616);
+}
+
+.jack{
+    width: 200px;
+    background-color: #ffffff63;
+    border-radius: 15px;
+}
+
+.jackHoodie{
+    height: 250px;
+    width: 240px;
+    border-radius: 9px 50px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.jack:hover{
+    scale: 1.1 1.1;
+    transition: 0.3s;
+    box-shadow: 5px 5px 5px rgba(110, 13, 31, 0.616);
+}
+
+.jack2{
+    width: 200px;
+    background-color: #ffffff63;
+    border-radius: 15px;
+}
+
+.jack2Hoodie{
+    height: 230px;
+    width: 230px;
+    border-radius: 9px 50px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.jack2:hover{
+    scale: 1.1 1.1;
+    transition: 0.3s;
+    box-shadow: 5px 5px 5px rgba(110, 13, 31, 0.616);
+}
+
+.purp{
+    width: 200px;
+    background-color: #ffffff63;
+    border-radius: 15px;
+}
+
+.purpHoodie{
+    height: 240px;
+    width: 230px;
+    border-radius: 9px 50px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.purp:hover{
+    scale: 1.1 1.1;
+    transition: 0.3s;
+    box-shadow: 5px 5px 5px rgba(110, 13, 31, 0.616);
+}
+
+.blue{
+    width: 200px;
+    background-color: #ffffff63;
+    border-radius: 15px;
+}
+
+.blueHoodie{
+    height: 240px;
+    width: 230px;
+    border-radius: 9px 50px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.blue:hover{
+    scale: 1.1 1.1;
+    transition: 0.3s;
+    box-shadow: 5px 5px 5px rgba(110, 13, 31, 0.616);
+}

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="portfo.css">
+    <title>Assya Atmani - Portfolio</title>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="fade-in-element">
+        <div class="header-overlay">
+            <h2 class="welcome">Welcome to my creative portfolio</h2>
+            <h1 class="name">ASSYA ATMANI</h1>
+            
+            <nav class="contents">
+                <a href="#about" class="nav-btn">About me</a>
+                <a href="#skills" class="nav-btn">Skills</a>
+                <a href="#fproject" class="nav-btn">Projects</a>
+                <a href="#contact" class="nav-btn">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about" class="aboutme fade-in-element">
+        <h2>About me</h2>
+        <p>Hello, my name is <b><i>ASSYA ATMANI</i></b>.<br>
+        An 18-year-old first-year student in Digital Development. I am passionate about creating web pages and developing interactive digital projects. I am a motivated, serious, and dedicated learner, eager to deepen my knowledge in web development. So far, I have studied HTML, CSS, Python, JavaScript, and POO, and I enjoy using these tools to build creative and functional websites. My goal is to continuously improve my skills, follow an effective learning path, and become a competent and accomplished developer. In the future, I aim to work on innovative projects, master new programming languages, and contribute to the digital world as a skilled and creative developer.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section fade-in-element">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <article class="skill-card">
+                <h3>Technical Skills</h3>
+                <ul>
+                    <li><strong>Web Development:</strong> HTML, CSS, JavaScript</li>
+                    <li><strong>Programming Languages:</strong> Python, POO</li>
+                    <li><strong>Tools:</strong> VS Code</li>
+                </ul>
+            </article>
+            
+            <article class="skill-card">
+                <h3>Personal Skills</h3>
+                <ul>
+                    <li><strong>Motivated:</strong> Eager to learn and constantly improve.</li>
+                    <li><strong>Creative Thinking:</strong> Enjoy coming up with innovative solutions.</li>
+                    <li><strong>Responsibility:</strong> Take work seriously and meet deadlines.</li>
+                </ul>
+            </article>
+        </div>
+    </section>
+
+    <!-- Projects1 Section -->
+    <section id="fproject" class="project fade-in-element">
+        <div class="project-content">
+            <h3><u>First Project (Static website)</u></h3>
+            <article class="description">
+                <h2 class="dressup">Dress-Up</h2>
+                <p>An online clothing store website designed to showcase fashion products in a clean and modern layout. Built using HTML and CSS, this project helped me improve my skills in web structure, styling, and creating an organized and visually appealing user interface.</p>
+            </article>
+        </div>
+
+        <article class="project-media">
+            <a href="mon_site/log.html">
+                <img src="assets/dress-up-logo.png" alt="Dress-Up Logo" class="logo">
+            </a>
+            <p class="view"><b>Click the image to explore</b></p>
+        </article>
+    </section>
+
+    <div class="python-sections-wrapper fade-in-element">
+        <section id="pyqt-project" class="project python-split-card">
+            <div class="project-content">
+                <h3><u>Second Project - Part 1</u></h3>
+                <article class="description">
+                    <h2 class="dressup">PyQt Calculator</h2>
+                    <p>Developed a calculator using <b>PyQt</b> with a modern and responsive graphical interface, featuring basic arithmetic operations and interactive buttons.</p>
+                </article>
+                
+                <div class="calc-holder">
+                    <div class="pyqt-native-window">
+                        <div class="pyqt-native-body">
+                            <input type="text" id="pyqt-display" class="pyqt-native-screen" readonly value="">
+                            <div class="pyqt-native-grid">
+                                <button class="pyqt-native-btn" onclick="pressPyQt('7')">7</button>
+                                <button class="pyqt-native-btn" onclick="pressPyQt('8')">8</button>
+                                <button class="pyqt-native-btn" onclick="pressPyQt('9')">9</button>
+                                <button class="pyqt-native-btn" onclick="pressPyQt('/')">/</button>
+                                
+                                <button class="pyqt-native-btn" onclick="pressPyQt('4')">4</button>
+                                <button class="pyqt-native-btn" onclick="pressPyQt('5')">5</button>
+                                <button class="pyqt-native-btn" onclick="pressPyQt('6')">6</button>
+                                <button class="pyqt-native-btn" onclick="pressPyQt('*')">*</button>
+                                
+                                <button class="pyqt-native-btn" onclick="pressPyQt('1')">1</button>
+                                <button class="pyqt-native-btn" onclick="pressPyQt('2')">2</button>
+                                <button class="pyqt-native-btn" onclick="pressPyQt('3')">3</button>
+                                <button class="pyqt-native-btn" onclick="pressPyQt('-')">-</button>
+                                
+                                <button class="pyqt-native-btn" onclick="clearPyQt()">C</button>
+                                <button class="pyqt-native-btn" onclick="pressPyQt('0')">0</button>
+                                <button class="pyqt-native-btn" onclick="equalPyQt()">=</button>
+                                <button class="pyqt-native-btn" onclick="pressPyQt('+')">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: TKINTER CALCULATOR -->
+        <section id="tkinter-project" class="project python-split-card">
+            <div class="project-content">
+                <h3><u>Second Project - Part 2</u></h3>
+                <article class="description">
+                    <h2 class="dressup">Tkinter Calculator</h2>
+                    <p>Created a calculator using <b>Tkinter</b> with a user-friendly interface, providing essential features for performing basic arithmetic operations in Python.</p>
+                </article>
+                
+                <div class="calc-holder">
+                    <div class="tkinter-calc-ui">
+                        <input type="text" id="tk-display" class="calc-screen-web" readonly value="">
+                        <div class="grid-buttons-web">
+                            <button class="tk-btn-web" onclick="pressTK('7')">7</button>
+                            <button class="tk-btn-web" onclick="pressTK('8')">8</button>
+                            <button class="tk-btn-web" onclick="pressTK('9')">9</button>
+                            <button class="tk-btn-web" onclick="pressTK('/')">/</button>
+                            
+                            <button class="tk-btn-web" onclick="pressTK('4')">4</button>
+                            <button class="tk-btn-web" onclick="pressTK('5')">5</button>
+                            <button class="tk-btn-web" onclick="pressTK('6')">6</button>
+                            <button class="tk-btn-web" onclick="pressTK('*')">*</button>
+                            
+                            <button class="tk-btn-web" onclick="pressTK('1')">1</button>
+                            <button class="tk-btn-web" onclick="pressTK('2')">2</button>
+                            <button class="tk-btn-web" onclick="pressTK('3')">3</button>
+                            <button class="tk-btn-web" onclick="pressTK('-')">-</button>
+                            
+                            <button class="tk-btn-web" onclick="clearTK()">C</button>
+                            <button class="tk-btn-web" onclick="pressTK('0')">0</button>
+                            <button class="tk-btn-web" onclick="equalTK()">=</button>
+                            <button class="tk-btn-web" onclick="pressTK('+')">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section id="contact" class="contact fade-in-element">
+        <div class="contact-box">
+            <h2>Contact</h2>
+            <h3>"FEEL FREE TO CONTACT ME"</h3>
+            <p class="email-text"><b>Mail: <a href="mailto:atmaniassia22@gmail.com">atmaniassia22@gmail.com</a></b></p>
+            <form class="contact-form">
+                <input id="name" type="text" placeholder="Your Name" required>
+                <input id="mail" type="email" placeholder="Your Email" required>
+                <input id="subject" type="text" placeholder="Subject" required>
+                <textarea name="msg" id="message" placeholder="Message" rows="5" required></textarea>
+                <button class="submit-btn" type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p>@ Created by <i><u>ASSYA ATMANI</u></i></p>
+    </footer>
+
+    <script>
+        const pyqtDisp = document.getElementById('pyqt-display');
+        function pressPyQt(val) { pyqtDisp.value += val; }
+        function clearPyQt() { pyqtDisp.value = ''; }
+        function equalPyQt() {
+            try { pyqtDisp.value = eval(pyqtDisp.value); } 
+            catch { pyqtDisp.value = 'Error'; }
+        }
+        const tkDisp = document.getElementById('tk-display');
+        function pressTK(val) { tkDisp.value += val; }
+        function clearTK() { tkDisp.value = ''; }
+        function equalTK() {
+            try { tkDisp.value = eval(tkDisp.value); } 
+            catch { tkDisp.value = 'Error'; }
+        }
+    </script>
+</body>
+</html>

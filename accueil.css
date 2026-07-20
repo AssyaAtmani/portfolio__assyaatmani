@@ -1,0 +1,121 @@
+body{
+    background-color: rgb(172, 168, 168);
+}
+
+header{
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.863),rgba(202, 58, 79, 0.877));
+    height: 130px;
+    padding: 10px;
+}
+
+header h1{
+    text-align: center;
+    text-shadow: 7px 7px 6px rgb(94, 66, 85);
+    margin: 60px;
+    font-size: 40px;
+    background: linear-gradient(to bottom, rgb(110, 13, 30), rgb(116, 43, 116));
+    font-size: 60px;
+    font-weight: bold;
+    color: transparent;
+    background-clip: text;
+}
+
+header p{
+    font-size: 19px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    position: relative;
+    bottom: 40px;
+    white-space: pre-wrap;
+    line-height: 28px;
+}
+
+.logo{
+    height: 120px;
+    width: 150px;
+    opacity: 0.6;
+    border-radius: 20px;
+}
+
+.logo:hover{
+    scale: 1.1 1.1;
+    opacity: 1;
+    box-shadow: 5px 5px 5px #6e6c6ca9;
+    transition: 0.3s
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    right: 20px;
+    padding-right: 30px
+}
+
+ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+}
+
+
+nav a{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    text-decoration-line: none;
+    font-size: 20px;
+    position: relative;
+    border-bottom: 2px solid transparent;
+}
+
+a:hover{
+    border-bottom-color: white;
+}
+
+button{
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.863),rgba(202, 58, 79, 0.877));
+    border-radius: 10px;
+    padding: 13px;
+    padding-right: 7px;
+    left: 45%;
+    top: 480px;
+    position: absolute;
+}
+
+button a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+button:hover{
+    scale: 1.1 1;
+    transition: 0.3s;
+    box-shadow: 3px 3px 4px gray;
+}
+
+
+footer{
+    background-color: rgba(0, 0, 0, 0.363);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.863),rgba(202, 58, 79, 0.877));
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    position: fixed;
+    width: 100%
+}
+
+@media (max-width: 768px) {
+    button {
+        width: 30%;
+        position: absolute;
+        left: 40px; 
+    }
+}

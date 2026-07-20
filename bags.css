@@ -1,0 +1,366 @@
+body{
+    background-color: rgba(128, 128, 128, 0.747);
+}
+
+header{
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.863),rgba(202, 58, 79, 0.877));
+    height: 130px;
+    padding: 10px;
+}
+
+.search{
+    position: absolute;
+    top: 100px;
+    right: 20px;
+    color: whitesmoke;
+    width: 300px;
+}
+
+input{
+    width: 250px;
+    background-image: linear-gradient(rgba(65, 1, 12, 0.288))
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0 0 4px #777575b2;
+}
+
+.logo{
+    height: 120px;
+    width: 150px;
+    opacity: 0.6;
+    border-radius: 20px;
+}
+
+.logo:hover{
+    scale: 1.1 1.1;
+    opacity: 1;
+    box-shadow: 5px 5px 5px #6e6c6ca9;
+    transition: 0.3s
+}
+
+nav{
+    position: fixed;
+    top: 1px;
+    right: 20px;
+    padding-right: 30px
+}
+
+ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+  nav{
+    right: 1px;
+  }
+}
+
+a{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 20px;
+    text-decoration-line: none;
+    border-bottom: 2px solid transparent;
+}
+
+a:hover{
+    border-bottom-color: white;
+}
+
+fieldset{
+    border-color:  rgba(110, 13, 31, 0.39);
+    border-radius: 9px 50px;
+}
+
+legend h2 i{
+    background: linear-gradient(to bottom, rgb(107, 19, 34), rgb(87, 28, 87));
+    background-clip: text;
+    color: transparent;
+    font-size: 40px;
+}
+
+.img{
+    padding: 0;
+    padding-right: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section{
+    height:500px;
+    width:100%;
+    overflow: scroll
+}
+
+.box {
+    flex: 1 1 250px;
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+    /* Responsive : pour les petits écrans */
+@media (max-width: 600px) {
+    .box {
+        flex: 1 1 100%;
+    }
+}
+
+.red{
+    width: 200px;
+    background-color: #ffffff63;
+    border-radius: 15px;
+}
+
+.redBag{
+    height: 250px;
+    width: 250px;
+    border-radius: 9px 50px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.red:hover{
+    scale: 1.1 1.1;
+    transition: 0.3s;
+    box-shadow: 5px 5px 5px rgba(110, 13, 31, 0.616);
+}
+
+button{
+    position: relative;
+    left: 20px;
+    border-style: solid;
+    border-color: #5506149d;
+    border-radius: 5px 50px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.beige{
+    width: 200px;
+    background-color: #ffffff63;
+    border-radius: 15px;
+}
+
+.beigeBag{
+    height: 250px;
+    width: 250px;
+    border-radius: 9px 50px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.beige:hover{
+    scale: 1.1 1.1;
+    transition: 0.3s;
+    box-shadow: 5px 5px 5px rgba(110, 13, 31, 0.616);
+}
+
+.black{
+    width: 200px;
+    background-color: #ffffff63;
+    border-radius: 15px;
+}
+
+.blackBag{
+    height: 250px;
+    width: 260px;
+    border-radius: 9px 50px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.black:hover{
+    scale: 1.1 1.1;
+    transition: 0.3s;
+    box-shadow: 5px 5px 5px rgba(110, 13, 31, 0.616);
+}
+
+.pista{
+    width: 200px;
+    background-color: #ffffff63;
+    border-radius: 15px;
+}
+
+.pistaBag{
+    height: 290px;
+    width: 250px;
+    border-radius: 9px 50px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.pista:hover{
+    scale: 1.1 1.1;
+    transition: 0.3s;
+    box-shadow: 5px 5px 5px rgba(110, 13, 31, 0.616);
+}
+
+.white{
+    width: 200px;
+    background-color: #ffffff63;
+    border-radius: 15px;
+}
+
+.whiteBag{
+    height: 250px;
+    width: 250px;
+    border-radius: 9px 50px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.white:hover{
+    scale: 1.1 1.1;
+    transition: 0.3s;
+    box-shadow: 5px 5px 5px rgba(110, 13, 31, 0.616);
+}
+
+.whibl{
+    width: 200px;
+    background-color: #ffffff63;
+    border-radius: 15px;
+}
+
+.whiblBag{
+    height: 250px;
+    width: 250px;
+    border-radius: 9px 50px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.whibl:hover{
+    scale: 1.1 1.1;
+    transition: 0.3s;
+    box-shadow: 5px 5px 5px rgba(110, 13, 31, 0.616);
+}
+
+.gold{
+    width: 200px;
+    background-color: #ffffff63;
+    border-radius: 15px;
+}
+
+.goldBag{
+    height: 250px;
+    width: 250px;
+    border-radius: 9px 50px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.gold:hover{
+    scale: 1.1 1.1;
+    transition: 0.3s;
+    box-shadow: 5px 5px 5px rgba(110, 13, 31, 0.616);
+}
+
+.bla{
+    width: 200px;
+    background-color: #ffffff63;
+    border-radius: 15px;
+}
+
+.blaBag{
+    height: 260px;
+    width: 250px;
+    border-radius: 9px 50px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.bla:hover{
+    scale: 1.1 1.1;
+    transition: 0.3s;
+    box-shadow: 5px 5px 5px rgba(110, 13, 31, 0.616);
+}
+
+.blac{
+    width: 200px;
+    background-color: #ffffff63;
+    border-radius: 15px;
+}
+
+.blacBag{
+    height: 290px;
+    width: 260px;
+    border-radius: 9px 50px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.blac:hover{
+    scale: 1.1 1.1;
+    transition: 0.3s;
+    box-shadow: 5px 5px 5px rgba(110, 13, 31, 0.616);
+}
+
+.pink{
+    width: 200px;
+    background-color: #ffffff63;
+    border-radius: 15px;
+}
+
+.pinkBag{
+    height: 290px;
+    width: 260px;
+    border-radius: 9px 50px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.pink:hover{
+    scale: 1.1 1.1;
+    transition: 0.3s;
+    box-shadow: 5px 5px 5px rgba(110, 13, 31, 0.616);
+}
+
+.grey{
+    width: 200px;
+    background-color: #ffffff63;
+    border-radius: 15px;
+}
+
+.greyBag{
+    height: 290px;
+    width: 250px;
+    border-radius: 9px 50px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.grey:hover{
+    scale: 1.1 1.1;
+    transition: 0.3s;
+    box-shadow: 5px 5px 5px rgba(110, 13, 31, 0.616);
+}
+
+.cyan{
+    width: 200px;
+    background-color: #ffffff63;
+    border-radius: 15px;
+}
+
+.cyanBag{
+    height: 340px;
+    width: 250px;
+    border-radius: 9px 50px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.cyan:hover{
+    scale: 1.1 1.1;
+    transition: 0.3s;
+    box-shadow: 5px 5px 5px rgba(110, 13, 31, 0.616);
+}

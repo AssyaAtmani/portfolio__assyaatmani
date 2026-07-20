@@ -1,0 +1,124 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: rgba(128, 128, 128, 0.747);
+}
+
+header{
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.863),rgba(202, 58, 79, 0.877));
+    height: 130px;
+    padding: 10px;
+}
+
+.logo{
+    height: 120px;
+    width: 150px;
+    opacity: 0.6;
+    border-radius: 20px;
+}
+
+.logo:hover{
+    scale: 1.1 1.1;
+    opacity: 1;
+    box-shadow: 5px 5px 5px #6e6c6ca9;
+    transition: 0.3s
+}
+
+nav{
+    position: fixed;
+    top: 9px;
+    right: 20px;
+    padding-right: 30px
+}
+
+ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+  nav{
+    right: 1px;
+  }
+}
+a{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 20px;
+    text-decoration-line: none;
+    border-bottom: 2px solid transparent;
+}
+
+a:hover{
+    border-bottom-color: white;
+}
+
+fieldset{
+    border-color:  rgba(110, 13, 31, 0.39);
+    border-radius: 9px 50px;
+}
+
+legend h1 i{
+    background: linear-gradient(to bottom, rgb(107, 19, 34), rgb(87, 28, 87));
+    background-clip: text;
+    color: transparent;
+    font-size: 40px;
+}
+
+h2{
+  background: linear-gradient(to bottom, #6b1322, rgb(87, 28, 87));
+    background-clip: text;
+    color: transparent;
+}
+
+.container { 
+    max-width: 600px; 
+    margin: auto; 
+    background: #3f071031; 
+    padding: 20px; 
+    border-radius: 8px; 
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+}
+.item { 
+    border: 1px solid #ddd; 
+    padding: 15px; 
+    margin-bottom: 20px; 
+    border-radius: 5px; 
+}
+.item h3 { 
+    margin-top: 0; 
+    color: #333; 
+}
+.item p { 
+    margin: 5px 0; 
+    font-size: 20px;
+}
+.total { 
+    font-weight: bold; 
+    font-size: 1.2em; 
+    background: linear-gradient(to bottom, #6b1322, rgb(87, 28, 87));
+    background-clip: text;
+    color: transparent; 
+}
+button { 
+    position: relative;
+    left: 20px;
+    border-style: solid;
+    border-color: #5506149d;
+    border-radius: 5px 50px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.plumDress{
+    border-radius: 9px 50px;
+    width: 330px;
+    height: 410px;
+    margin-left: 20px;
+    margin-top: 20px;
+}

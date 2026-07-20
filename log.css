@@ -1,0 +1,121 @@
+body{
+  background-color: gray;
+  background-image:url(logo.png);
+  background-attachment: fixed;
+}
+
+.logo{
+  text-align: left;
+  height: 120px;
+  width: 155px;
+  border-radius: 20px;
+  opacity: 0.7;
+  transition: 0.3s
+}
+
+.logo:hover{
+  scale: 1.1 1.1;
+  opacity: 1;
+  box-shadow: 6px 6px 7px 5px rgba(56, 56, 56, 0.774);
+}
+.two{
+  font-style: italic;
+  font-size: 80px;
+  text-transform: uppercase;
+  white-space: pre;
+  color: white;
+  text-shadow: 6px 8px 6px rgb(126, 108, 8);
+  position: absolute;
+  bottom: -100px; /* Start off-screen at bottom */
+  left: 50%;
+  transform: translateX(-50%);
+  animation: up 2s ease-in-out forwards;
+}
+
+
+@keyframes up{
+  0%{
+      bottom: -100px; left: 50%; transform: translateX(-50%); 
+      }
+  50%{
+      bottom: 50%; left: 50%; transform: translateX(-50%); 
+      } 
+  100%{
+      bottom: 50%; left: 80%; transform: translateX(-50%); 
+      } 
+}
+
+.login-container {
+max-width: 360px;
+margin: 60px auto;
+margin-left: 80px;
+padding: 20px 30px;
+background: #ffffffb0;
+border-radius: 12px;
+box-shadow: 0 0 10px rgba(0,0,0,0.2);
+font-family: 'Georgia', serif;
+color: #333;
+
+
+opacity: 0; 
+width: 100%;
+padding: 20px;
+box-sizing: border-box;
+position: absolute;
+left: 10%; 
+top: 50%;
+transform: translateY(-50%);
+animation: fadeIn 1s ease-in-out 4s forwards; 
+}
+@keyframes fadeIn {
+to { opacity: 1; }
+}
+
+
+.login-container h2 {
+font-weight:bolder;
+text-align: center;
+margin-bottom: 20px;
+font-style: italic;
+color: #222;
+text-decoration-line: underline;
+}
+
+.login-container label {
+display: block;
+margin-top: 15px;
+font-weight: 600;
+}
+
+.login-container input {
+width: 300px;
+padding: 10px;
+margin-top: 5px;
+border: 1px solid #858484;
+border-radius: 10px;
+font-size: 14px;
+}
+
+input:focus {
+outline: none;
+box-shadow: 0 0 4px #aaa;
+}
+
+
+.login-container button {
+width: 100%;
+padding: 12px;
+margin-top: 25px;
+background-color: #333;
+color: #fff;
+font-weight: bold;
+border: none;
+border-radius: 6px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+.login-container button:hover {
+background-color: #1d1c1c;
+transform: scale(1.1); 
+}
