@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    background-image: url('assets/bgimage.avif'); 
+    background-image: url('bgimage.avif'); 
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
