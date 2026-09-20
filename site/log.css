@@ -1,0 +1,164 @@
+/* Style général d'origine */
+body {
+  background-color: gray;
+  background-image: url(logo.png);
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.logo {
+  text-align: left;
+  height: 120px;
+  width: 155px;
+  border-radius: 20px;
+  opacity: 0.7;
+  transition: 0.3s;
+  margin: 10px;
+}
+
+.logo:hover {
+  scale: 1.1 1.1;
+  opacity: 1;
+  box-shadow: 6px 6px 7px 5px rgba(56, 56, 56, 0.774);
+}
+
+/* Titre lli ghayban houwa l-owwel direct */
+.two {
+  font-style: italic;
+  font-size: 80px;
+  text-transform: uppercase;
+  white-space: pre;
+  color: white;
+  text-shadow: 6px 8px 6px rgb(126, 108, 8);
+  
+  /* Positionnement fixe en haut à droite sur PC */
+  position: absolute;
+  top: 40px;
+  right: 10%;
+  
+  /* Kat-ban direct f 1.5s ghir kat7al la page */
+  opacity: 0;
+  animation: fadeInText 1.5s ease-in-out forwards;
+}
+
+@keyframes fadeInText {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Boîte de connexion lli ttsna l-kitaba o tji habta chwya */
+.login-container {
+  max-width: 360px;
+  padding: 20px 30px;
+  background: #ffffffb0;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  font-family: 'Georgia', serif;
+  color: #333;
+  width: 100%;
+  box-sizing: border-box;
+  
+  /* Positionnement sur PC : left dialek o habṭناها l top 55% */
+  position: absolute;
+  left: 10%; 
+  top: 55%;
+  transform: translateY(-50%);
+  
+  /* 🌟 Hna ttsna 1.5s (mor l-kitaba) 3ad t-bda tban bchwiiya */
+  opacity: 0; 
+  animation: fadeIn 1.5s ease-in-out 1.5s forwards; 
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+.login-container h2 {
+  font-weight: bolder;
+  text-align: center;
+  margin-bottom: 20px;
+  font-style: italic;
+  color: #222;
+  text-decoration-line: underline;
+}
+
+.login-container label {
+  display: block;
+  margin-top: 15px;
+  font-weight: 600;
+}
+
+.login-container input {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #858484;
+  border-radius: 10px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 0 4px #aaa;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 25px;
+  background-color: #333;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-container button:hover {
+  background-color: #1d1c1c;
+  transform: scale(1.1); 
+}
+
+/* =======================================================
+   📱 MEDIA QUERIES : ADAPTATION SMARTPHONES (Écrans sghar)
+   ======================================================= */
+@media (max-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* Ajustement du titre sur mobile */
+  .two {
+    font-size: 32px;
+    white-space: normal;
+    position: relative;
+    top: 10px;
+    right: auto;
+    margin-top: 10px;
+    text-align: center;
+    animation: fadeInText 1.2s ease-in-out forwards;
+  }
+
+  /* Ajustement de la boîte sur mobile */
+  .login-container {
+    position: relative;
+    left: auto;
+    top: auto;
+    transform: none;
+    margin: 40px auto 20px auto; /* Zdna l-khwaye l-foq bach mathbsh 3la text */
+    max-width: 90%;
+    animation: fadeIn 1.2s ease-in-out 1.2s forwards; /* Tttsnah chwya 7ta hna */
+  }
+
+  .login-container input {
+    max-width: 100%;
+  }
+}

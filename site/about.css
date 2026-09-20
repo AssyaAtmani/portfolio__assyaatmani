@@ -1,0 +1,167 @@
+body {
+    /* 🌟 Background fatek o clean f blasst l-gris ghamoq */
+    background-color: #f8f9fa; 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 🌟 Le Header m3a l-linear gradient d'origine dyalk */
+header {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.863), rgba(202, 58, 79, 0.877));
+    min-height: 130px;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    flex-wrap: wrap; 
+}
+
+header h1 {
+    display: none; /* Kat-khfi l-text "Dress-Up" 7it la7t f la photo blli 3ndek l-logo kfaya */
+}
+
+.logo {
+    height: 120px;
+    width: 150px;
+    opacity: 0.7;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.logo:hover {
+    scale: 1.1;
+    opacity: 1;
+    box-shadow: 5px 5px 5px rgba(202, 58, 79, 0.4);
+}
+
+/* 🌟 Navigation Menu f l-header */
+header nav {
+    margin-left: auto;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+header nav a {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: 0.2s;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    border-bottom-color: white;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+    }
+    header nav {
+        margin: 15px 0;
+    }
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* --- Section About --- */
+.about {
+    /* 🌟 L-gradient dyal la section kima kanti dayro nta exact */
+    background-image: linear-gradient(#8860605b, #fa2b4a52);
+    padding: 40px 30px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 40px auto;
+    max-width: 1000px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.about h1 {
+    font-weight: bold;
+    margin-bottom: 20px;
+    background: linear-gradient(to bottom, #6e0d1e, #742b74);
+    background-clip: text;
+    color: transparent;
+    font-style: italic;
+    font-size: 45px;
+}
+
+.special {
+    background: linear-gradient(to bottom, black, gray);
+    background-clip: text;
+    color: transparent;
+}
+
+.about h2 {
+    margin-top: 25px;
+    font-size: 24px;
+    background: linear-gradient(to bottom, #6e0d1fb7, rgba(116, 43, 116, 0.753));
+    background-clip: text;
+    color: transparent;
+    font-style: italic;
+    text-decoration: 1px solid underline #6e0d1e;
+}
+
+.about p {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.about ul {
+    margin-left: 20px;
+}
+
+.about ul li {
+    margin-bottom: 10px;
+}
+
+/* 🌟 Les liens li lte7t rddthom f loun bordo fatek o zwin y-mشي m3a theme */
+.about ul li a {
+    color: #ca3a4f; 
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.2s;
+    border-bottom: 1px dashed transparent;
+}
+
+.about ul li a:hover {
+    color: #6e0d1e;
+    border-bottom-color: #6e0d1e;
+    padding-left: 5px; /* Chi animation khfya mli y-flyer user b l-maws */
+}
+
+/* Button Explore */
+.explore-btn {
+    display: inline-block;
+    padding: 10px 25px;
+    background: white;
+    border: 1px solid #ca3a4f;
+    text-decoration: none;
+    color: #ca3a4f;
+    margin-top: 25px;
+    font-weight: bold;
+    border-radius: 30px; /* Rddnah rounded zwin */
+    transition: 0.3s;
+}
+
+.explore-btn:hover {
+    background: #ca3a4f;
+    color: white;
+    box-shadow: 0 4px 10px rgba(202, 58, 79, 0.3);
+}

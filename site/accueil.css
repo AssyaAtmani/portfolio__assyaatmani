@@ -1,0 +1,245 @@
+/* ===================================================================
+   1. GLOBAL RESET & BODY CONFIG
+   =================================================================== */
+body {
+    background-color: rgba(128, 128, 128, 0.747);
+    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0; /* Rddnah 0 bach l-header y-ched l-foq cleaner */
+    color: #fff;
+}
+
+/* ===================================================================
+   2. THEME HEADER UNIFIED (DRESSES MATCHING)
+   =================================================================== */
+header {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.863), rgba(202, 58, 79, 0.877));
+    height: 130px;
+    padding: 10px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+header h1 {
+    display: none; /* Khbina h1 dial l-header l-9dim dialek 7it l-logo m9add blastou */
+}
+
+.logo {
+    height: 120px;
+    width: 150px;
+    opacity: 0.6;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    opacity: 1;
+    box-shadow: 5px 5px 5px #6e6c6ca9;
+}
+
+/* Position dyal la barre de recherche b7al dresses */
+.search {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    color: whitesmoke;
+    width: 300px;
+    border: 2px solid rgba(110, 13, 31, 0.39);
+    border-radius: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.search legend {
+    padding: 0 5px;
+}
+
+header input {
+    width: 280px;
+    padding: 6px;
+    border: 1px solid #ccc;
+    background-image: linear-gradient(rgba(65, 1, 12, 0.288));
+    color: white;
+    box-sizing: border-box;
+}
+
+header input:focus {
+    outline: none;
+    box-shadow: 0 0 4px #777575b2;
+}
+
+/* ===================================================================
+   3. STICKY NAVIGATION MENU BAR
+   =================================================================== */
+.main-nav {
+    background-color: #222;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.main-nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav a {
+    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: 0.3s;
+}
+
+.main-nav a:hover {
+    border-bottom-color: white;
+    color: #ca3a4f;
+}
+
+/* ===================================================================
+   4. FEATURED / HERO BANNER SECTION
+   =================================================================== */
+.featured {
+    max-width: 1200px;
+    width: 90%;
+    margin: 40px auto; /* Centered perfectly */
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(202, 58, 80, 0.35));
+    border-radius: 30px;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.featured h2 {
+    background: linear-gradient(to bottom, rgb(110, 13, 30), rgb(116, 43, 116));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-style: italic;
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.featured p {
+    font-size: 22px;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* ===================================================================
+   5. PRODUCT CATEGORIES GRID LAYOUT
+   =================================================================== */
+.type {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    max-width: 1300px;
+    margin: 30px auto;
+    width: 95%;
+}
+
+.box {
+    flex: 1 1 260px;
+    max-width: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 15px;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+/* General images configuration inside cards */
+.box img {
+    border-radius: 9px 50px;
+    width: 100%;
+    max-width: 280px;
+    height: 350px;
+    object-fit: cover;
+    transition: 0.3s;
+    display: block;
+    margin: 0 auto 15px auto;
+}
+
+.box img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(110, 13, 31, 0.6);
+}
+
+/* Content headings inside cards */
+h3 {
+    background: linear-gradient(to bottom, rgb(110, 13, 30), rgb(116, 43, 116));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-style: italic;
+    font-size: 22px;
+    margin: 10px 0 5px 0;
+}
+
+.type p {
+    font-size: 16px;
+    margin: 0 0 15px 0;
+    color: #eee;
+    min-height: 44px; /* Bach y-kono les paragraphes perfectly aligned */
+}
+
+/* Card buttons custom design */
+button {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(110, 13, 31, 0.39);
+    border-radius: 9px 50px;
+    cursor: pointer;
+    width: 100%;
+    padding: 10px;
+    transition: 0.3s;
+    color: #fff;
+}
+
+button:hover {
+    background-color: rgba(202, 58, 79, 0.2);
+    border-color: #ca3a4f;
+}
+
+/* ===================================================================
+   6. FOOTER STYLING
+   =================================================================== */
+footer {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.863), rgba(202, 58, 79, 0.877));
+    text-align: center;
+    padding: 15px;
+    margin-top: 50px;
+    box-sizing: border-box;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* ===================================================================
+   7. RESPONSIVE MEDIA QUERIES
+   =================================================================== */
+@media (max-width: 768px) {
+    .main-nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .box {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}

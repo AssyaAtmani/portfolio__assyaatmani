@@ -1,0 +1,207 @@
+/* 1. Reset o l-Body */
+body {
+    background-color: rgba(128, 128, 128, 0.747);
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+}
+
+/* 2. Header o Layout dial Recherche - b7al professional s7i7 */
+header {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.863), rgba(202, 58, 79, 0.877));
+    height: 130px;
+    padding: 10px;
+    position: relative;
+    box-sizing: border-box; /* bach may-tkhربقش l-hadd f size */
+}
+
+.logo {
+    height: 110px; /* m-gadda m3a l-hadd */
+    width: 150px;
+    opacity: 0.6;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    opacity: 1;
+    box-shadow: 5px 5px 5px #6e6c6ca9;
+}
+
+/* Had style hwa dial professional b-dabt */
+.search {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    color: whitesmoke;
+    width: 300px;
+    border: 2px solid rgba(110, 13, 31, 0.39);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.search legend {
+    padding: 0 5px;
+}
+
+input {
+    width: 280px;
+    padding: 6px;
+    border: 1px solid #ccc;
+    background-image: linear-gradient(rgba(65, 1, 12, 0.288));
+    color: white;
+    box-sizing: border-box;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0 0 4px #777575b2;
+}
+
+/* 3. Navigation Menu */
+nav {
+    background-color: #222;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: 0.3s;
+}
+
+a:hover {
+    border-bottom-color: white;
+    color: #ca3a4f;
+}
+
+@media (max-width: 600px) {
+    ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
+/* 4. Fieldset o Sections Layout */
+.main-fieldset {
+    border: 2px solid rgba(110, 13, 31, 0.39);
+    border-radius: 9px 50px;
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+legend h2 i {
+    background: linear-gradient(to bottom, rgb(107, 19, 34), rgb(87, 28, 87));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 35px;
+    font-style: normal;
+}
+
+.products-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+/* 5. Product Boxes Layout */
+.box {
+    background-color: #ffffff63;
+    border-radius: 15px;
+    width: 220px;
+    padding: 15px;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.box:hover {
+    transform: scale(1.05);
+    box-shadow: 5px 5px 15px #6e0d1f9d;
+}
+
+.box img {
+    height: 310px;
+    width: 180px;
+    border-radius: 9px 50px;
+    object-fit: cover;
+}
+
+.desc {
+    text-align: center;
+    font-family: sans-serif;
+    color: #333;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.price-box {
+    margin: 5px 0 10px 0;
+}
+
+b {
+    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+}
+
+del {
+    color: #cc2942;
+    font-size: 14px;
+}
+
+/* 6. Button2 (Panier) */
+.button2 {
+    border-style: solid;
+    border-color: #5506149d;
+    border-radius: 5px 50px;
+    padding: 8px 15px;
+    font-size: 14px;
+    background-color: white;
+    color: #550614;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+    width: 85%;
+    margin-top: auto;
+}
+
+.button2:hover {
+    background-color: #550614;
+    color: white;
+}
+
+/* 7. Footer */
+footer {
+    background-color: #0000005d;
+    background-image: linear-gradient(to right, #00000048, #ca3a505e);
+    text-align: center;
+    padding: 15px;
+    color: white;
+    margin-top: 20px;
+}

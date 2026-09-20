@@ -1,0 +1,252 @@
+/* ===================================================================
+   1. GLOBAL RESET & BODY CONFIG
+   =================================================================== */
+body {
+    background-color: rgba(128, 128, 128, 0.747);
+    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0; /* Rddnah 0 bach l-header y-ched l-foq clean */
+    color: #fff;
+}
+
+/* ===================================================================
+   2. THEME HEADER UNIFIED (DRESSES MATCHING)
+   =================================================================== */
+header {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.863), rgba(202, 58, 79, 0.877));
+    height: 130px;
+    padding: 10px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.logo {
+    height: 120px;
+    width: 150px;
+    opacity: 0.6;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    opacity: 1;
+    box-shadow: 5px 5px 5px #6e6c6ca9;
+}
+
+/* [IMPORTANT] Hna khbina la recherche ghir f la page contact */
+header .search {
+    display: none;
+}
+
+/* ===================================================================
+   3. STICKY NAVIGATION MENU BAR
+   =================================================================== */
+.main-nav {
+    background-color: #222;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.main-nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav a {
+    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: 0.3s;
+}
+
+.main-nav a:hover {
+    border-bottom-color: white;
+    color: #ca3a4f;
+}
+
+/* ===================================================================
+   4. LAYOUT DE LA SECTION CONTACT (CONTAINER)
+   =================================================================== */
+.contact-section {
+    max-width: 1000px;
+    margin: 40px auto; /* Zdna margin bach y-b3ad 3la l-menu sticky */
+    width: 90%;
+}
+
+/* Fieldset transparent exact b7al le panier */
+fieldset.contact-container {
+    border: 2px solid rgba(110, 13, 31, 0.39);
+    border-radius: 9px 50px;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    box-sizing: border-box;
+}
+
+legend h2 i {
+    background: linear-gradient(to bottom, rgb(116, 18, 36), rgb(94, 46, 94));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 28px;
+    padding: 0 10px;
+}
+
+.descrip {
+    text-align: center;
+    font-style: italic;
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #2b0811; /* Lon l-boni dial le panier */
+}
+
+/* Flexbox dyal l-formulaire o les infos */
+.contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.formul {
+    flex: 1 1 450px;
+}
+
+.continfo {
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* ===================================================================
+   5. FORM INPUTS DESIGN
+   =================================================================== */
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+.formul input[type="text"],
+.formul input[type="email"],
+.formul textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #5506149d;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.95);
+    color: #000;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+.formul textarea {
+    resize: none;
+}
+
+/* Button Envoyer */
+.btn-envoyer {
+    width: 100%;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.863), rgba(202, 58, 79, 0.877));
+    color: white;
+    border: none;
+    border-radius: 5px 50px;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: inherit;
+}
+
+.btn-envoyer:hover {
+    box-shadow: 0 5px 15px rgba(110, 13, 31, 0.6);
+    transform: translateY(-2px);
+}
+
+/* ===================================================================
+   6. CONTACT INFO BOX & SOCIAL MEDIA
+   =================================================================== */
+.contact-info {
+    background-color: rgba(255, 255, 255, 0.95);
+    color: #000;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.contact-info p {
+    margin: 15px 0;
+    font-size: 15px;
+}
+
+.contact-info p b {
+    color: #5506149d;
+}
+
+/* Réseaux Sociaux buttons */
+.social {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0 0;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.social li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #5506149d;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: 0.3s;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.social li a:hover {
+    background-color: #fff;
+    color: #5506149d;
+}
+
+/* ===================================================================
+   7. FOOTER STYLING
+   =================================================================== */
+footer {
+    background-color: rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+/* ===================================================================
+   8. RESPONSIVE DESIGN (MOBILE QUERIES)
+   =================================================================== */
+@media (max-width: 768px) {
+    .main-nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .contact-content {
+        flex-direction: column;
+    }
+}
