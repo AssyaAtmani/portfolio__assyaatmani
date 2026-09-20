@@ -1,0 +1,202 @@
+body{
+    background-color: rgba(128, 128, 128, 0.747);
+    
+}
+
+header{
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.863),rgba(202, 58, 79, 0.877));
+    height: 120px;
+    padding: 10px;
+}
+
+h1{
+    text-align: center;
+    position: relative;
+    bottom: 120px;
+    font-size: 40px;
+    font-style: italic;
+    background: linear-gradient(to bottom, rgb(255, 111, 138), rgb(175, 95, 175));
+    color: transparent;
+    background-clip: text;
+}
+
+.logo{
+    height: 120px;
+    width: 150px;
+    border-radius: 30px;
+    opacity: 0.6;
+}
+
+.logo:hover{
+    scale: 1.1 1.1;
+    opacity: 1;
+    transition: 0.3s;
+    box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.589) ;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    right: 45px;
+}
+
+ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav a{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    text-decoration-line: none;
+    font-size: 20px;
+    position: relative;
+    border-bottom: 2px solid transparent;
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+  header h1{
+    left: 0px;
+  }
+}
+
+a:hover{
+    border-bottom-color: white;
+}
+.featured{
+    width: 100%;
+    margin:  auto;
+    text-align: center;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.315),rgba(202, 58, 80, 0.295));
+    border-radius: 30px;
+}
+
+.featured h2{
+    background: linear-gradient(to bottom, rgb(110, 13, 30), rgb(116, 43, 116));
+    background-clip: text;
+    color: transparent;
+    font-style: italic;
+    font-size: 40px;
+    padding-top: 10px;
+}
+
+.featured p{
+    font-size: 25px;
+    padding-bottom: 15px;
+}
+
+.type{
+    justify-content: center;
+    display:flex;
+    gap:20px;
+    margin:30px;
+}
+
+.elegant{
+    border-radius: 7px 60px;
+    width: 300px;
+    height: 350px;
+    margin-left: 20px
+}
+
+h3{
+    background: linear-gradient(to bottom, rgb(110, 13, 30), rgb(116, 43, 116));
+    background-clip: text;
+    color: transparent;
+    font-style: italic;
+    font-size: 20px;
+}
+
+button{
+    padding-top: 0;
+    background-color: rgba(128, 128, 128, 0.404);
+    border-color: rgba(110, 13, 31, 0.281);
+    border-radius: 9px 50px;
+}
+
+.professional{
+    border-radius: 9px 50px;
+    width: 300px;
+    height: 360px;
+    margin-left: 20px;
+}
+
+.casual{
+    border-radius: 9px 50px;
+    width: 280px;
+    height: 360px;
+    margin-left: 20px;
+}
+
+.bags{
+    border-radius: 9px 50px;
+    width: 330px;
+    height: 350px;
+    margin-left: 20px;
+}
+
+
+.type p{
+    font-size: 20px;
+
+}
+
+
+.elegant:hover{
+    scale: 1.1 1.1;
+    transition: 0.3s;
+    box-shadow: 5px 5px 5px rgba(110, 13, 31, 0.616);
+}
+
+
+.professional:hover{
+    scale: 1.1 1.1;
+    transition: 0.3s;
+    box-shadow: 5px 5px 5px rgba(110, 13, 31, 0.616);
+}
+
+.casual:hover{
+    scale: 1.1 1.1;
+    transition: 0.3s;
+    box-shadow: 5px 5px 5px rgba(110, 13, 31, 0.616);
+}
+
+.bags:hover{
+    scale: 1.1 1.1;
+    transition: 0.3s;
+    box-shadow: 5px 5px 5px rgba(110, 13, 31, 0.616);
+}
+
+
+footer{
+    background-color: rgba(0, 0, 0, 0.363);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.863),rgba(202, 58, 79, 0.877));
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    width: 100%
+}
+
+.type {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    flex: 1 1 200px;
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+    .box {
+        flex: 1 1 100%;
+    }
+}
